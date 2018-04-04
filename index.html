@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>미나토자키 사나</title>
+    <style>
+    @import url('https://fonts.googleapis.com/css?family=Nanum+Gothic');
+      * {
+        font-family: 'Nanum Gothic', sans-serif;
+      }
+      body {
+        margin-top:0px;
+      }
+      /*div {
+        border: 2px solid gray;
+      }*/
+      a {
+        text-decoration: none;
+        color:black;
+      }
+      a:hover{
+        color:#4d4d4d;
+      }
+      h2 {
+        text-align:center;
+      }
+
+      li {
+        list-style: circle;
+      }
+
+      p {
+        margin: 0px auto;
+        max-width: 800px;
+      }
+      table {
+        margin: 0px auto;
+        width: 100%;
+        max-width: 500px;
+        padding: 20px;
+        background-color: #f5f5f5;
+        text-align: center;
+      }
+      iframe {
+        position: relative;
+        margin: 20px auto;
+        display: block;
+        max-width: 560px;
+      }
+
+      #title_box {
+        z-index: 10;
+        position: fixed;
+        width: 100%;
+        background-color: white;
+        border-bottom: 1px solid #d6d6d6;
+        box-shadow: 1px 5px 10px #bbbbbb;
+        left: 0px;
+        top: 0px;
+        opacity: 0.95;
+      }
+      .title {
+        text-align: center;
+      }
+
+      #total_box {
+        display: grid;
+        grid-template-columns: 1fr 5fr;
+        height: 100%;
+      }
+    /*네비게이션*/
+      .index_box {
+        padding: 100px 10px;
+        border-right: 2px solid #cfcfcf;
+      }
+      .index_text {
+        font-size:20px;
+        line-height: 40px;
+      }
+    /*메인 내용*/
+      .main_box {
+        width: 100%;
+        max-width: 1000px;
+        margin: 0px auto;
+        padding: 100px 0px;
+        background-color: white;
+        opacity: 0.93;
+      }
+      .main_box_back {
+        background-image:url('http://cfile27.uf.tistory.com/image/993DAB425AAA8079312D04');
+        background-repeat: no-repeat;
+        background-size:cover;
+        background-position: bottom;
+      }
+      #img{
+        display: block;
+        margin: 20px auto;
+        width: 40%;
+        position: relative;
+      }
+
+    </style>
+  </head>
+  <body>
+      <div id="title_box">
+      <div class="title">
+      <h1><a href="sana_css.html">미나토자키 사나</a></h1>
+      </div>
+    </div>
+    <div id="total_box">
+      <div class="index_box">
+        <ul class="index_text">
+          <li><a href="#profile">프로필</a></li>
+          <li><a href="#life">생애</a></li>
+          <li><a href="#video">영상</a></li>
+        </ul>
+      </div>
+        <div class="main_box_back">
+        <div class="main_box">
+          <div id="profile">
+            <img id="img"src="sana.jpg"title="sana" alt="sana">
+            <p>
+                사나(본명: 미나토자키 사나, 일본어: 湊﨑 紗夏みなとざき さな, 1996년 12월 29일 ~ )는 대한민국에서 활동하는 일본 출신의 가수로, JYP 엔터테인먼트 소속 여성그룹 트와이스의 서브보컬을 맡고 있다.
+            </p>
+            <h2>기본 정보</h2>
+            <!-- 버리기 아까우니까 나둔다.
+            <ul>
+              <li>본명	미나토자키 사나 (湊﨑 紗夏)</li>
+              <li>출생	1996년 12월 29일 (21세)</li>
+              <li>일본 오사카부 오사카시 덴노지구</li>
+              <li>국적	일본</li>
+              <li>직업	가수</li>
+              <li>장르	K-pop, 댄스 팝</li>
+              <li>활동 시기	2014년 ~ 현재</li>
+              <li>가족	엄마,아빠,할머니</li>
+              <li>소속사	JYP 엔터테인먼트</li>
+              <li>소속 그룹	트와이스</li>
+              <li>웹사이트	http://twice.jype.com/</li>
+            </ul>
+            -->
+          <table>
+            <tr>
+              <th>본명</th>
+              <td>미나토자키 사나 (湊﨑 紗夏)</td>
+            </tr>
+            <tr>
+              <th>출생</th>
+              <td>1996년 12월 29일 (21세)</td>
+            </tr>
+            <tr>
+              <th>국적</th>
+              <td>일본</td>
+            </tr>
+            <tr>
+              <th>지역</th>
+              <td>오사카부 오사카시 덴노지구</td>
+            </tr>
+            <tr>
+              <th>직업</th>
+              <td>가수</td>
+            </tr>
+            <tr>
+              <th>장르</th>
+              <td>K-pop, 댄스 팝</td>
+            </tr>
+            <tr>
+              <th>활동 시기</th>
+              <td>2014년 ~ 현재</td>
+            </tr>
+            <tr>
+              <th>가족</th>
+              <td>엄마,아빠,할머니</td>
+            </tr>
+            <tr>
+              <th>소속사</th>
+              <td>JYP 엔터테인먼트</td>
+            </tr>
+            <tr>
+              <th>소속 그룹</th>
+              <td>트와이스</td>
+            </tr>
+            <tr>
+              <th>웹사이트</th>
+              <td><a href="http://twice.jype.com/">JYP</a></td>
+            </tr>
+
+          </table>
+        </div>
+        <div id="life">
+          <h2>생애</h2>
+          <p>
+            사나는 1996년 12월 29일 일본 오사카부에서 태어났다. JYP에 들어오기 전 2009년 말에서 2012년 초까지 EXILE의 댄스 아카데미 EXPG의 오사카 지점에서 춤을 배웠었고, JYP에 스카우트 되어 한국으로 건너왔다.<br> JYP 엔터테인먼트 소속으로 2015년 10월 걸그룹 트와이스의 9명 멤버 중 한 명으로 데뷔했다.
+          </p>
+          <p>
+          트와이스의 노래 《Cheer Up》에서 "친구를 만나느라 Shy Shy Shy"의 'Shy Shy Shy'(샤이 샤이 샤이)를 '샤샤샤'로 변형하여 큰 인기를 얻었다. 이후에 이 '샤샤샤'라는 멘트는 많은 패러디를 낳았다.
+          </p>
+        <div id="video">
+          <h2>영상</h2>
+          <iframe width="100%" height="315" src="https://www.youtube.com/embed/_Jo5k6isJxg" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+        </div>
+        </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
