@@ -10,6 +10,10 @@
       }
       body {
         margin:0px;
+        background-image:url('http://cfile27.uf.tistory.com/image/993DAB425AAA8079312D04');
+        background-repeat: no-repeat;
+        background-size:cover;
+        background-position: bottom;
       }
       /*div {
         border: 2px solid gray;
@@ -18,8 +22,16 @@
         text-decoration: none;
         color:black;
       }
+      .title a {
+        text-decoration: none;
+        color:#404040;
+      }
+      .index_text a {
+        text-decoration: none;
+        color:#404040;
+      }
       a:hover{
-        color: #f262b8;
+        color: #f45b93;
       }
       h1 {
         text-shadow: 1px 1px 2px gray;
@@ -29,8 +41,12 @@
       }
 
       li {
-        list-style: disc;
+        list-style: none;
         text-shadow: 1px 1px 2px gray;
+      }
+      .list {
+        padding-left: 5px;
+        border-left: 3px gray solid;
       }
 
       p {
@@ -51,7 +67,7 @@
         display: block;
         max-width: 560px;
       }
-
+    /* 타이틀 */
       #title_box {
         z-index: 10;
         position: fixed;
@@ -79,28 +95,34 @@
       .index_box {
         padding: 100px 10px;
         border-right: 2px solid #cfcfcf;
+        border-left: 2px solid #cfcfcf;
         background-color: #fcecf1;
+        margin-left:80px;
+        width: 200px;
       }
       .index_text {
-        font-size:20px;
-        line-height: 40px;
+        font-size:25px;
+        line-height: 50px;
         padding-left: 50px;
+        position: fixed;
       }
     /*메인 내용*/
       .main_box {
         width: 100%;
-        max-width: 1000px;
-        margin: 0px auto;
+        max-width: 900px;
+        margin: 0px auto 100px auto;
         padding: 100px 0px;
         background-color: white;
         opacity: 0.93;
       }
-      .main_box_back {
+      /* .main_box_back {
         background-image:url('http://cfile27.uf.tistory.com/image/993DAB425AAA8079312D04');
         background-repeat: no-repeat;
         background-size:cover;
         background-position: bottom;
-      }
+      } */
+
+      /* 이미지 */
       #img{
         display: block ;
         margin: 20px auto;
@@ -112,14 +134,96 @@
       #img:hover{
         transform: scale(1.03);
       }
+      /* 선 */
+      .line{
+        max-width: 700px;
+        width: 100%;
+        border: 1px solid lightgray;
+        margin: 20px auto;
+      }
+      /* 모바일페이지 */
+      @media (max-width:850px){
+        #title_box {
+          z-index: 10;
+          position: fixed;
+          width: 100%;
+          height: 80px;
+          background-color: #ffd6d9;
+          border-bottom: 1px solid #cfcfcf;
+          box-shadow: 1px 1px 10px #b6b6b6;
+          left: 0px;
+          top: 0px;
+        }
+        .title {
+          position: relative;
+          text-align: center;
+          top: -8px;
+        }
+        #total_box {
+          display: block;
+        }
+        p {
+          padding: 20px;
+          margin: 0px auto;
+          max-width: 800px;
+        }
+        table {
+          margin: 0px auto;
+          width: 100%;
+          max-width: 400px;
+          padding: 20px;
+          background-color: #f5f5f5;
+          text-align: center;
+        }
+        .main_box {
+          width: 100%;
+          max-width: 900px;
+          margin: 0px auto 100px auto;
+          padding: 150px 0px 100px 0px;
+          background-color: white;
+          opacity: 0.93;
+        }
+        .index_box {
+          position: fixed;
+          z-index: 1;
+          padding: 0px 0px;
+          border-right: none;
+          border-left: none;
+          border-bottom:2px solid #cfcfcf;
+          background-color: #fcecf1;
+          margin-left:0px;
+          width: 100%;
+          height: 130px;
+          margin: 0px auto;
+        }
+        .index_text {
+          position: relative;
+          font-size:20px;
+          padding: 0px;
+          width: 240px;
+          margin: 0px auto;
+          top: 80px;
+        }
 
+        .list {
+          position: relative;
+          margin: 0px auto;
+          border-left: none;
+          padding-left: 0px;
+          float: left;
+          width: 80px;
+          text-align: center;
+
+          }
+        }
+      }
     </style>
   </head>
   <body>
       <div id="title_box">
       <div class="title">
         <h1><img class="twice_logo"src="https://cdn140.picsart.com/234786782015212.png?r1024x1024"/>
-          <a href="index.html">미나토자키 사나</a>
+          <a href="sana_css.html">미나토자키 사나</a>
           <img class="twice_logo"src="https://cdn140.picsart.com/234786782015212.png?r1024x1024"/>
         </h1>
       </div>
@@ -127,9 +231,9 @@
     <div id="total_box">
       <div class="index_box">
         <ul class="index_text">
-          <li><a href="#profile">프로필</a></li>
-          <li><a href="#life">생애</a></li>
-          <li><a href="#video">영상</a></li>
+          <li class="list"><a href="#profile">프로필</a></li>
+          <li class="list"><a href="#life">생애</a></li>
+          <li class="list"><a href="#video">영상</a></li>
         </ul>
       </div>
         <div class="main_box_back">
@@ -139,6 +243,7 @@
             <p>
                 사나(본명: 미나토자키 사나, 일본어: 湊﨑 紗夏みなとざき さな, 1996년 12월 29일 ~ )는 대한민국에서 활동하는 일본 출신의 가수로, JYP 엔터테인먼트 소속 여성그룹 트와이스의 서브보컬을 맡고 있다.
             </p>
+            <div class=line></div>
             <h2>기본 정보</h2>
             <!-- 버리기 아까우니까 나둔다.
             <ul>
@@ -204,6 +309,7 @@
           </table>
         </div>
         <div id="life">
+          <div class=line></div>
           <h2>생애</h2>
           <p>
             사나는 1996년 12월 29일 일본 오사카부에서 태어났다. JYP에 들어오기 전 2009년 말에서 2012년 초까지 EXILE의 댄스 아카데미 EXPG의 오사카 지점에서 춤을 배웠었고, JYP에 스카우트 되어 한국으로 건너왔다.<br> JYP 엔터테인먼트 소속으로 2015년 10월 걸그룹 트와이스의 9명 멤버 중 한 명으로 데뷔했다.
@@ -212,8 +318,9 @@
           트와이스의 노래 《Cheer Up》에서 "친구를 만나느라 Shy Shy Shy"의 'Shy Shy Shy'(샤이 샤이 샤이)를 '샤샤샤'로 변형하여 큰 인기를 얻었다. 이후에 이 '샤샤샤'라는 멘트는 많은 패러디를 낳았다.
           </p>
         <div id="video">
+          <div class=line></div>
           <h2>영상</h2>
-          <iframe width="100%" height="315" src="https://www.youtube.com/embed/_Jo5k6isJxg" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+          <iframe width="100%" height="315" src="https://www.youtube.com/embed/_Jo5k6isJxg?amp;autoplay=1" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
 
         </div>
         </div>
